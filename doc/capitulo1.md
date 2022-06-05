@@ -77,7 +77,7 @@ O controlador **CarsByManufacturerController** é composto por 1 funcionalidade 
 
 <br>
 
-O controlador **AuthController** é composto por 7 funcionalidade baseada em verbos do protocolo HTTP:
+O controlador **AuthController** é composto por 7 funcionalidades baseadas em verbos do protocolo HTTP:
 * **GET** (login) -> Retorna uma página pública onde é possivel efetuar login ou ir para a documentação da API.
 * **GET** (protected) -> Retorna uma página privada onde é possivel aceder a endpoints que retornam informação do utilizador, ir para a documentação da API ou efetuar logout.
 * **GET** (logout) -> Efetua logout e retorna uma página pública onde é possivel efetuar login ou ir para a documentação da API.
