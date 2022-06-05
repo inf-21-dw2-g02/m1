@@ -17,7 +17,7 @@ const swaggerDefinition = {
     },
   ],
   paths: {
-    "/engines": {
+    "/Engines": {
       get: {
         tags: ["EnginesController"],
         summary: "Retrieve engines",
