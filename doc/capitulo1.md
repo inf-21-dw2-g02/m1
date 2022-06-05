@@ -95,7 +95,7 @@ O controlador **swagger-controler** é responsável pela definição da document
 
 <br>
 
-## Grupo 6
+## Grupo 2
 
 * André Cacheira / Perfil GitHub: [@Cacheira14](https://github.com/Cacheira14)
 * Bruno Sousa / Perfil GitHub: [@brunomfsrw1](https://github.com/brunomfsrw1)
