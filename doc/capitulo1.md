@@ -5,7 +5,7 @@
 Esta API foi desenvolvida com o recurso à OpenAPI, baseada na Arquitetura REST.
 A API tem o intuito de fazer a gestão de um Concessionário de Automóveis. Consegue oferecer informação sobre motores, carros, fabricantes e proprietários. Abaixo apresenta-se todas as funcionalidades para controlar toda a informação descrita anteriormente.
 
-A API é composta por 7 controladores:
+A API é composta por 9 controladores, sendo 7 deles para manipular a base de dados, 1 para controlar a autenticação realizada pelo OAuth 2.0 e um último que define a API utilizada. Sendo esses:
 
 * CarsController
 * EnginesController
@@ -14,6 +14,11 @@ A API é composta por 7 controladores:
 * CarsByEngineController
 * CarsByOwnerController
 * CarsByManufacturerController
+
+</br>
+
+* AuthController
+* swagger-controller
 
 </br>
 
@@ -57,18 +62,28 @@ O controlador **OwnersController** é composto por 6 funcionalidades baseadas em
 
 <br>
 
-O controlador **CarsByEngineController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByEngineController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um motor com um ID passado como parâmetro.
 
 <br>
 
-O controlador **CarsByOwnerController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByOwnerController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um dono com um ID passado como parâmetro.
 
 <br>
 
-O controlador **CarsByManufacturerController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByManufacturerController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um fabricante com um ID passado como parâmetro.
+
+<br>
+
+O controlador **AuthController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
+* **GET{id}** -> Retorna todos os carros associados a um fabricante com um ID passado como parâmetro.
+
+<br>
+
+O controlador **swagger-controler**:
+*
 
 <br>
 
