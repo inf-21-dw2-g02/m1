@@ -62,18 +62,28 @@ O controlador **OwnersController** é composto por 6 funcionalidades baseadas em
 
 <br>
 
-O controlador **CarsByEngineController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByEngineController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um motor com um ID passado como parâmetro.
 
 <br>
 
-O controlador **CarsByOwnerController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByOwnerController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um dono com um ID passado como parâmetro.
 
 <br>
 
-O controlador **CarsByManufacturerController** é composto por 1 funcionalidades baseadas em verbos do protocolo HTTP:
+O controlador **CarsByManufacturerController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
 * **GET{id}** -> Retorna todos os carros associados a um fabricante com um ID passado como parâmetro.
+
+<br>
+
+O controlador **AuthController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
+* **GET{id}** -> Retorna todos os carros associados a um fabricante com um ID passado como parâmetro.
+
+<br>
+
+O controlador **swagger-controler**:
+*
 
 <br>
 
