@@ -15,6 +15,7 @@ const AuthController = require('../controllers/AuthController');
 
 // ---------- CarsController ----------
 
+router.get('/Cars/Count', CarsController.countCars);
 router.get('/Cars', CarsController.retrieveCars);
 router.post('/Cars', auth, CarsController.createCar);
 
@@ -24,6 +25,7 @@ router.delete('/Car/:id', auth, CarsController.deleteCar);
 
 // ---------- EnginesController ----------
 
+router.get('/Engines/Count', EnginesController.countEngines);
 router.get('/Engines', EnginesController.retrieveEngines);
 router.post('/Engines', auth, EnginesController.createEngine);
 
@@ -33,6 +35,7 @@ router.delete('/Engine/:id', auth, EnginesController.deleteEngine);
 
 // ---------- ManufacturersController ----------
 
+router.get('/Manufacturers/Count', ManufacturersController.countManufacturers);
 router.get('/Manufacturers', ManufacturersController.retrieveManufacturers);
 router.post('/Manufacturers', auth, ManufacturersController.createManufacturer);
 
@@ -42,6 +45,7 @@ router.delete('/Manufacturer/:id', auth, ManufacturersController.deleteManufactu
 
 // ---------- OwnersController ----------
 
+router.get('/Owners/Count', OwnersController.countOwners);
 router.get('/Owners', OwnersController.retrieveOwners);
 router.post('/Owners', auth, OwnersController.createOwner);
 

@@ -1,5 +1,12 @@
 var sql = require("../utils/db");
 
+const countOwners = (req, res) => {
+    sql.query("SELECT COUNT(id) FROM owner", function (err, result) {
+        if (err) throw err;
+        res.send(result);
+    });
+};
+
 const retrieveOwners = (req, res) => {
   sql.query("SELECT * FROM owner", function (err, result) {
     if (err) throw err;
@@ -60,4 +67,4 @@ const updateOwner = (req, res) => {
   );
 };
 
-module.exports = {retrieveOwners, retrieveOwner, deleteOwner, updateOwner, createOwner};
+module.exports = {countOwners, retrieveOwners, retrieveOwner, deleteOwner, updateOwner, createOwner};

@@ -17,6 +17,18 @@ const swaggerDefinition = {
     },
   ],
   paths: {
+    "/Engines/Count": {
+      get: {
+        tags: ["EnginesController"],
+        summary: "Count engines",
+        operationId: "countEngines",
+        responses: {
+          200: {
+            description: "Number of engines model instances",
+          },
+        },
+      },
+    },
     "/Engines": {
       get: {
         tags: ["EnginesController"],
@@ -268,6 +280,18 @@ const swaggerDefinition = {
         "x-swagger-router-controller": "EnginesController",
       },
     },
+    "/Cars/Count": {
+      get: {
+        tags: ["CarsController"],
+        summary: "Count cars",
+        operationId: "countCars",
+        responses: {
+          200: {
+            description: "Number of cars model instances",
+          },
+        },
+      },
+    },
     "/Cars": {
       get: {
         tags: ["CarsController"],
@@ -509,6 +533,18 @@ const swaggerDefinition = {
           },
         },
         "x-swagger-router-controller": "CarsController",
+      },
+    },
+    "/Manufacturers/Count": {
+      get: {
+        tags: ["ManufacturersController"],
+        summary: "Count manufacturers",
+        operationId: "countManufacturers",
+        responses: {
+          200: {
+            description: "Number of manufacturers model instances",
+          },
+        },
       },
     },
     "/Manufacturers": {
@@ -763,6 +799,18 @@ const swaggerDefinition = {
           },
         },
         "x-swagger-router-controller": "ManufacturersController",
+      },
+    },
+    "/Owners/Count": {
+      get: {
+        tags: ["OwnersController"],
+        summary: "Count owners",
+        operationId: "countOwners",
+        responses: {
+          200: {
+            description: "Number of owners model instances",
+          },
+        },
       },
     },
     "/Owners": {

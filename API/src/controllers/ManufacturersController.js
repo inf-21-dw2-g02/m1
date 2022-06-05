@@ -7,6 +7,13 @@ const retrieveManufacturers = (req, res) => {
   });
 };
 
+const countManufacturers = (req, res) => {
+  sql.query("SELECT COUNT(id) FROM manufacturer", function (err, result) {
+      if (err) throw err;
+      res.send(result);
+  });
+};
+
 const createManufacturer = (req, res) => {
   sql.query(
     "INSERT INTO manufacturer (name, founded, description) VALUES (?,?,?)",
@@ -60,4 +67,4 @@ const updateManufacturer = (req, res) => {
   );
 };
 
-module.exports = {retrieveManufacturers, retrieveManufacturer, deleteManufacturer, updateManufacturer, createManufacturer};
+module.exports = {countManufacturers, retrieveManufacturers, retrieveManufacturer, deleteManufacturer, updateManufacturer, createManufacturer};

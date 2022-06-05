@@ -1,5 +1,12 @@
 var sql = require("../utils/db");
 
+const countCars = (req, res) => {
+    sql.query("SELECT COUNT(id) FROM car", function (err, result) {
+        if (err) throw err;
+        res.send(result);
+    });
+};
+
 const retrieveCars = (req, res) => {
   sql.query("SELECT * FROM car", function (err, result) {
     if (err) throw err;
@@ -66,4 +73,4 @@ const updateCar = (req, res) => {
   );
 };
 
-module.exports = {retrieveCars, createCar, retrieveCar, updateCar, deleteCar};
+module.exports = {countCars, retrieveCars, createCar, retrieveCar, updateCar, deleteCar};
