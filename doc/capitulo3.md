@@ -6,7 +6,7 @@
 
 Esta API foi formulada com recurso ao express, uma framework que engrena com a funcionalidade de Web Server do Node.js e que visa adicionar novas características de forma simples, facilitanto a organização de uma API relativamente aos middlewares e às rotas. No nosso caso, provou-se especialmente útil na definição de endpoints e de rotas, permitindo uma organização mais legível dos ficheiros da API, evitando a que todas as funcionalidades da mesma estivessem descritos num só ficheiro.
 
-### 3.1.3 Docker
+### 3.1.2 Docker
 
 Com vista a API poder ser montada rapidamente e utilizada através de uma interface, ignorando definições anteriores, a API e o servidor MySQL, foram colocados em containers Docker. Para estes containers conseguirem comunicar entre si, foi desenvolvido um docker-compose que junta as imagens, detalhando o seu espaço de trabalho, e cria uma rede interna partilhada pelos dois contentores.
 
