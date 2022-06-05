@@ -1,5 +1,5 @@
 {
-  "name": "authtutorial05",
+  "name": "Web Development - API using OAuth2",
   "version": "1.0.0",
   "description": "oauth2 tutorial",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "example",
     "UMAIA"
   ],
-  "author": "Raul Gonçalves",
+  "author": "Group 02",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
