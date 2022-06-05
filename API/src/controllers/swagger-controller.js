@@ -8,7 +8,7 @@ const swaggerDefinition = {
     title: "OAuth2.0_01",
     version: "1.0.0",
     description: "Example OAuth2.0 protected API",
-    contact: { name: "RaulGoncalves21x" },
+    contact: { name: "inf-21-dw2-g02" },
   },
   servers: [{ url: "http://localhost:" + config.port }],
   security: [
