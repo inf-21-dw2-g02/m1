@@ -77,13 +77,21 @@ O controlador **CarsByManufacturerController** é composto por 1 funcionalidade 
 
 <br>
 
-O controlador **AuthController** é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
-* **GET{id}** -> Retorna todos os carros associados a um fabricante com um ID passado como parâmetro.
+O controlador **AuthController** é composto por 7 funcionalidade baseada em verbos do protocolo HTTP:
+* **GET** (login) -> Retorna uma página pública onde é possivel efetuar login ou ir para a documentação da API.
+* **GET** (protected) -> Retorna uma página privada onde é possivel aceder a endpoints que retornam informação do utilizador, ir para a documentação da API ou efetuar logout.
+* **GET** (logout) -> Efetua logout e retorna uma página pública onde é possivel efetuar login ou ir para a documentação da API.
+* **GET** (me) -> Retorna informações do utilizador.
+* **GET** (gitHubMe) -> Retorna informações do utilizador com recurso à token de authentication.
+* **GET** (auth/github) -> Operação responsável por efetuar a autenticação.
+* **GET** (auth/github/callback) -> Operação responsável por comunicar de volta o token.
+
 
 <br>
 
-O controlador **swagger-controler**:
-*
+O controlador **swagger-controler** é responsável pela definição da documentação da API e é composto por 1 funcionalidade baseada em verbos do protocolo HTTP:
+* **GET** (docs/swagger.json) -> Retorna uma página com a documentação da API no formato .json.
+
 
 <br>
 
