@@ -5,7 +5,7 @@
 Esta API foi desenvolvida com o recurso à OpenAPI, baseada na Arquitetura REST.
 A API tem o intuito de fazer a gestão de um Concessionário de Automóveis. Consegue oferecer informação sobre motores, carros, fabricantes e proprietários. Abaixo apresenta-se todas as funcionalidades para controlar toda a informação descrita anteriormente.
 
-A API é composta por 7 controladores:
+A API é composta por 9 controladores, sendo 7 deles para manipular a base de dados, 1 para controlar a autenticação realizada pelo OAuth 2.0 e um último que define a API utilizada. Sendo esses:
 
 * CarsController
 * EnginesController
@@ -14,6 +14,9 @@ A API é composta por 7 controladores:
 * CarsByEngineController
 * CarsByOwnerController
 * CarsByManufacturerController
+
+* AuthController
+* swagger-controller
 
 </br>
 
