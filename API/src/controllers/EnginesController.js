@@ -38,7 +38,7 @@ const retrieveEngine = (req, res) => {
 
 const deleteEngine = (req, res) => {
   sql.query(
-    "DELETE FROM engine WHERE id = ?",
+    "DELETE FROM car WHERE id = ?",
     [req.params.id],
     function (err, result) {
       if (err) throw err;

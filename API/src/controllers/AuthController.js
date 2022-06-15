@@ -17,9 +17,8 @@ const protected = (req, res) => {
 const authGitHub = (req, res) => {};
 
 const authCallback = (req, res) => {
-    //res.redirect("/");
-    res.redirect("http://localhost:3006/");
-  };
+    res.redirect("/");
+};
 
 const me = (req, res) => {
     res.json(req.user);

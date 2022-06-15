@@ -19,17 +19,8 @@ const sessionOptions = {
   saveUninitialized: true,
 };
 
-const corsOptions = {
-  credentials : true,
-  exposeHeaders : ["set-cookie"],
-  origin: ['http://localhost:3006'],
-  methods: ['POST', 'GET', 'DELETE', 'PUT', 'OPTIONS'],
-  allowHeaders: ['content-type', 'Authorization', 'Origin', 'Access-Control-Allow-Origin', 'Accept', 'Options']
-};
-
 // ------------------------------------------------------------ cors/passport/bodyparser ------------------------------------------------------------
-app.use(cors(corsOptions));
-app.options('*', cors());
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session(sessionOptions));
